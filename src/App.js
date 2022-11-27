@@ -129,11 +129,11 @@ async function deleteNote({ id, name }) {
     </Text>
     <Text as="span">{note.description}</Text>
     {note.image && (
-      <Image
+      <image>
         src={note.image}
         alt={`visual aid for ${notes.name}`}
         style={{ width: 400 }}
-      />
+        </image>
     )}
             <Button variation="link" onClick={() => deleteNote(note)}>
               Delete note
