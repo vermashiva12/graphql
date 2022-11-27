@@ -43,11 +43,6 @@
           "EMAIL"
         ]
       },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyc0dc5cd97ba54-staging-175042-deployment/amplify-cfn-templates/auth/graphql-cloudformation-template.json",
-        "logicalId": "authgraphql"
-      },
-      "lastPushTimeStamp": "2022-11-27T18:46:02.757Z",
       "output": {
         "UserPoolId": "us-east-1_y4m2EhPJV",
         "AppClientIDWeb": "7jcn20uom0c4n8qvvbd62cn8ip",
@@ -57,7 +52,43 @@
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "graphql"
       },
-      "lastPushDirHash": "IHe+WGN5f+qintH7F4LT9yJDblQ="
+      "lastPushTimeStamp": "2022-11-27T19:23:12.666Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyc0dc5cd97ba54-staging-175042-deployment/amplify-cfn-templates/auth/graphql-cloudformation-template.json",
+        "logicalId": "authgraphql"
+      }
+    }
+  },
+  "api": {
+    "graphql": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "lohuefe3zreulau64y5sh5z334",
+        "GraphQLAPIEndpointOutput": "https://qeuunrfkefhj5mti5da4m6w7jy.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-lv2mnrouingxvj5amuozgojrxu"
+      },
+      "lastPushTimeStamp": "2022-11-27T19:23:12.709Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyc0dc5cd97ba54-staging-175042-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apigraphql"
+      },
+      "lastPushDirHash": "BkoCrT+LnELcA9R9bixuT/GhBug="
     }
   }
 }
